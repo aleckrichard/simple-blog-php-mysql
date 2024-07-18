@@ -1,10 +1,11 @@
 <?php
 include_once '../includes/functions.php';
+include_once '../includes/header.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $title = $_POST['title'];
     $content = $_POST['content'];
-    if (createPost(3, $title, $content)){
+    if (createPost($_SESSION['user']['username'], $title, $content)){
         header('Location: create_post.php');
         exit;
     }else{
