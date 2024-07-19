@@ -63,3 +63,23 @@ function loginUser($username, $password) {
     }
     return false;
 }
+
+function getBootstrapColors() {
+    return array(
+        "primary" => "#0d6efd",
+        "secondary" => "#6c757d",
+        "success" => "#198754",
+        "danger" => "#dc3545",
+        "warning" => "#ffc107",
+        "info" => "#0dcaf0",
+        "light" => "#f8f9fa"
+    );
+}
+
+// Función para obtener un color al azar
+function getRandomColor() {
+    $colors = getBootstrapColors();
+    $colorKeys = array_keys($colors);
+    $randomKey = $colorKeys[array_rand($colorKeys)];
+    return $colors[$randomKey];
+}
