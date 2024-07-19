@@ -27,6 +27,4 @@ $posts = getPosts();
       
     </div>
 
-    <h2 class="display-6 text-center mb-4">Compare plans</h2>
-
- <?php    include_once '../includes/header.php'; ?>
+<?php include_once '../includes/footer.php'; ?>
