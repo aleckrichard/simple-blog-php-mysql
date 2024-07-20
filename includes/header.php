@@ -39,8 +39,4 @@ if (!isset($_SESSION['user'])): ?>
         <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="logout.php">Logout</a>
       </nav>
     </div>
-
-    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-      <h1 class="display-4 fw-normal text-body-emphasis">Welcome, <?= $_SESSION['user']['username'] ?></h1>
-    </div>
   </header>
