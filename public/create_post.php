@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
               </div>
             </div>
             <hr class="my-4">
-            <button class="btn btn-primary btn-lg" type="submit">Create Post</button>
+            <button class="btn btn-primary btn-md" type="submit">Create Post</button>
 </form>
   </main>
 
